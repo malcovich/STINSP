@@ -1,0 +1,67 @@
+.menu {
+    width: 100%;
+    height: 70px;
+    padding: 15px 30px;
+    .logo {
+        width: 200px;
+        height: 50px;
+        display: block;
+        background: url(../../assets/logo.svg) 0 0 no-repeat;
+        background-size: cover;
+    }
+}
+.wraper {
+    padding: 30px;
+    .col {
+        padding: 20px;
+        .title {
+            border-bottom: 1px solid rgba(0,0,0,.15)!important;
+            padding-bottom: 16px;
+            span{
+             font-size: 24px;
+             display: block;
+             font-weight: 600;
+             color:rgba(0,0,0,.85);
+             line-height: 28px;
+            }
+        }
+        ul{
+            padding-top: 32px;
+        }
+        .list-matches {
+            list-style: none;
+            width: 100%;
+            overflow: hidden;
+            margin-bottom: 24px;
+            .counter {
+                float: left;
+                font-size: 34px;
+                color:rgba(0,0,0,.15);
+            }
+            .content-li {
+              float: left;
+              margin-left: 16px;
+              padding: 5px 0;
+            
+                h3{
+                    font-size: 20px;
+                    font-weight: 600;
+                    color:rgba(0,0,0,.85);
+                    margin-bottom: 4px;
+                }
+                .league_name {
+                    font-weight: 400;
+                    line-height: 20px;
+                    color:rgba(0,0,0,.85);
+                    font-size: 15px;
+                }
+                .match_time {
+                    font-weight: 400;
+                    line-height: 20px;
+                    color:rgba(0,0,0,.54);
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
