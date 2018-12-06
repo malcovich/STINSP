@@ -18,7 +18,6 @@ export class CreateLeagueComponent implements OnInit {
     this.form = new FormGroup ({
       title: new FormControl(''),
     });
-    console.log(this.form)
   }
 
   save() {

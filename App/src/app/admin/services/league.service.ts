@@ -8,10 +8,10 @@ import { Injectable } from '@angular/core';
 export class AdminLeagueService {
     constructor(private http: HttpClient) { }
 
-    getPages() {
+    getLeagues() {
         // return this.http.get('http://localhost:3000/pages')
         //     .map(res => res.json());
-        return this.http.get('http://localhost:3000/pages');
+        return this.http.get('http://localhost:3000/leagues');
     }
 
     getPage(slug) {

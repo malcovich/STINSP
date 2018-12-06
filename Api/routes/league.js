@@ -12,7 +12,7 @@ var Page = require('../models/page');
 router.get('/', function (req, res) {
     League.find({}, function (err, pages) {
         if (err) console.log(err);
-        res.json(pages);
+        res.json({'result': pages});
     });
 });
 
