@@ -3,6 +3,8 @@ var router = express.Router();
 
 // Get Page Model
 var League = require('../models/league');
+var Page = require('../models/page');
+
 
 /*
 * GET all pages
@@ -44,14 +46,13 @@ router.post('/add', function (req, res) {
         if (page) {
             res.json("pageExists");
         } else {
-            var page = new Page({
+            var league = new League({
                 title: title,
                 slug: slug,
                 content: content,
-                sidebar: sidebar
             });
 
-            page.save(function (err) {
+            league.save(function (err) {
                 if (err) console.log(err);
                 res.json("ok");
             });

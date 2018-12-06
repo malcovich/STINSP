@@ -30,7 +30,7 @@ app.use(bodyParser.json())
 app.use(function (req, res, next) {
 
     // Website you wish to allow to connect
-    res.setHeader('Access-Control-Allow-Origin', 'http://localhost:4200');
+    res.setHeader('Access-Control-Allow-Origin', '*');
 
     // Request methods you wish to allow
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
@@ -46,6 +46,7 @@ app.use(function (req, res, next) {
     next();
 });
 
+
 // Set routes
 
 var pages = require('./routes/pages.js');
@@ -56,6 +57,7 @@ var league =  require('./routes/league.js');
 app.use('/pages', pages);
 app.use('/users', users);
 app.use('/sidebar', sidebar);
+app.use('/leagues', league);
 
 // Start the server
 var port = 3000;
